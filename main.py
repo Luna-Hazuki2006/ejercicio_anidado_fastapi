@@ -46,3 +46,7 @@ async def actualizar(item : Item):
 async def crear(oferta : Oferta): 
     resultados = {'oferta': oferta}
     return resultados
+
+@app.post('/imagenes/multiples')
+async def buscar(imagenes : list[Imagen]): 
+    return imagenes
